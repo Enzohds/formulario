@@ -1,9 +1,9 @@
 import {useState} from 'react';
 import './App.css';
 
-import face from './img/facebook.png';
-import insta from './img/instagram.png';
-import whats from './img/whatsapp.png';
+import face from './facebook.png';
+import insta from './instagram.png';
+import whats from './whatsapp.png';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false)
@@ -51,21 +51,21 @@ const App = () => {
     </div>
 
     <div className="input-box">
-      <label htmlFor="name">
-         Name
+      <label htmlFor="email">
+         Email
          <div className="input-field">
-           <i className="fa-solid fa-user"></i>
-           <input type="text" name="name" id="name"/>
+           <i className="fa-solid fa-envelope"></i>
+           <input type="email" name="email" id="email"/>
          </div>
       </label>
     </div>
 
     <div className="input-box">
-      <label htmlFor="name">
-         Name
+      <label htmlFor="password">
+         Password
          <div className="input-field">
-           <i className="fa-solid fa-user"></i>
-           <input type="text" name="name" id="name"/>
+           <i className="fa-solid fa-key"></i>
+           <input type="password" name="password" id="password"/>
          </div>
       </label>
     </div>
